@@ -4,7 +4,7 @@
 body {
     margin:0; 
     padding:0;
-    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://nextcloud.kleinefamilie.tk/apps/files_sharing/publicpreview/p3J8sBGrcbjogtz?x=1080&y=1248&a=true&file=bkground.jpeg&scalingup=0") no-repeat center center fixed black;
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("https://nextcloud.kleinefamilie.tk/apps/files_sharing/publicpreview/p3J8sBGrcbjogtz?x=1080&y=1248&a=true&file=bkground.jpeg&scalingup=0") no-repeat center center fixed black;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
