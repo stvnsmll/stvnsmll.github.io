@@ -1,193 +1,81 @@
 /* Created by Steven Small*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body {
-	min-width: 400px;
-    margin: 0 !important;
-    padding: 0 !important;
-    background-color:#FFFFFF;
-	font-family: Helvetica, Arial, Geneva;
+    margin: 0;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-size: 24pt;
 }
 
-div#dropdown {
-   border:1px solid lightgrey;
-   height:45px;
-   width:45px;
-   max-width:96%;
-   float:left;
-   transition:110ms ease-out;
-   -webkit-transition:110ms ease-out;
-   overflow:hidden ;
-   margin:0px;
-   background-color:white;
-   position:fixed;
-   top: 58px;
-   font-family: Helvetica, Arial, Geneva;
+.portrait {
+    width: 700px;
+    max-width: 40%;
+    border-radius: 50%;
+    margin-top: -44px;
+    margin-bottom: -100px;
+    border: 4px solid #cc5500;
+    box-shadow: 0 3px 8px #555;
+    transition: all 110ms ease;
+     -webkit-transition: 110ms ease;
+     -moz-transition: 110ms ease-out;
+     -o-transition: 110ms ease;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: 30%;
+    z-index: 2;
 }
 
-
-header {
-	margin: 0;
-	padding: 20px;
-	top:0px;
-	position:fixed;
-	width: 100%;
-	min-width: 400px;
-	height: 125px;
-	background-color:#FFFFFF;
-	border-bottom: 0px solid #2e6c80;
-	font-family: Helvetica, Arial, Geneva;
-	z-index: 4;
+.preHeader {
+    padding: 1px 16px;
+    background: #cc5500;
+    text-align: left;
+    padding-left: 20%;
 }
 
-
-div#shadowcover {
-	margin: 0;
-	padding: 0;
-	top:120px;
-	position:absolute;
-	width:100%;
-	height: 40px;
-	background-image: linear-gradient(rgba(255,255,255,1) 25%, rgba(250,250,250,0));
-	border: 0px;
-	z-index: 3;
+.header {
+    z-index: 1;
 }
 
-
-div#headershadow {
-	margin: 0;
-	padding: 20px;
-	top:0px;
-	position:fixed;
-	width:100%;
-	height: 125px;
-	background-color:#c6c6c6;
-	border-bottom: 3px solid #2e6c80;
-	box-shadow: 0px 1px 4px 1px grey;
-	font-family: Helvetica, Arial, Geneva;
-	z-index: 2	;
+.headerInner {
+    padding: 0.8em;
+    background-color: #555;
+    color: #f1f1f1;
+    font-size: 1.4em;
+    font-weight: bold;
+    transition: box-shadow 410ms ease-out;
+     -webkit-transition: box-shadow 410ms ease-out;
+     -moz-transition: box-shadow 410ms ease-out;
+     -o-transition: box-shadow 410ms ease-out;
 }
 
-
-div#dropdown:hover {
-    width:300px;
-    height:351px;
-    box-shadow:0px 1px 8px 0px darkgrey;
-    background:white;
-    margin:4px;
-	font-family: Helvetica, Arial, Geneva;
+/* Page content */
+.content {
+    padding: 150px 30px 30px 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    z-index: 0;
 }
 
-div#dropdown:focus {
-    width:45px;
-    height:45px;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 
-div#myCarousel {
-	position: relative;
-	z-index: 1;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	max-width: 600px;
+.stickyPortrait {
+    width: 80px;
+    max-width: 50%;
+    margin-right: 0;
+    transform: translate(-10vw, -12px);   
+    border: 2px solid #cc5500;
 }
 
-img#myPortrait {
-	border-radius: 50%;
-	border: 3px solid #c65b0d;
-	width: 300px;
-	max-width: 50%;
-	margin-right: 50px;
-	margin-bottom: 25px;
-	box-shadow:0px 3px 10px 0px darkgrey;
-	transition:310ms ease-out;
-	 -webkit-transition:310ms ease-out;
-}
-
-img#myPortrait:hover {
-  /*Instead of hover changing this, I'd like the image to translate to the top if the page is scrolled more than X amount*/
-  border: 2px solid #c65b0d;
-  /*width: 120px;
-  transform: translate(30px, 30px);*/
-  transform: scale(1.05);
-}
-
-.dropdown-div:first-child {
-    margin-top:13px;
-}
-
-.dropdown-div:nth-child(4) {
-   margin-bottom:15px; 
+.shadow {
+    box-shadow: 0 3px 8px #888888;
 }
 
 
-.dropdown-div {
-   margin:1px 11px 1px 0px;
-   background:#2e6c80;
-   width:22px;
-   height:3px;
-   float:right;
-   clear:right;
-}
-
-.dropdown-content {
-   overflow:hidden ;
-   margin:2px 0 0 0;
-   list-style-type:none;
-   text-transform:uppercase;
-   padding:2px 0px 0px 0px;
-   border-top:1px solid lightgrey;
-   width:100%;
-}
-
-p.dropdown-texts {
-   font-size:17px;
-   border-top:1px solid lightgrey;
-   font-weight:bold ;
-   background:white;
-   color:#595959;
-   margin:0;
-   left:0;
-   padding:15px 5px 10px 20px;
-   letter-spacing:2px;
-   transition:100ms ease-out;
-   -webkit-transition: 100ms ease-out;
-}
-
-p.dropdown-texts:hover {
-   /*background:#2e6c80; */
-   color:#c65b0d;white;
-   border-left:3px solid #c65b0d;
-   border-right:3px solid #c65b0d;
-}
-
-a.drop-links {
-   text-decoration:none;
-}
-
-   
-
-   
-   
-/*    THESE WERE CARRIED OVER    */
-
-p,ol {
-	font-family: Helvetica, Arial, Geneva;
-	text-align: justify;
-}
-
-h1 {
-	margin: 0;
-	font: bold 24pt Helvetica, Arial, geneva;
-}
-
-h2 {
-	font: bold 14pt Helvetica, Arial, geneva;
-}
-
-h3 {
-	font: bold 12pt Helvetica, Arial, geneva;
-	color: #2e6c80
-}
-
-small {
-  font-size: smaller;
+.sticky + .content {
+    padding-top: 140px;
 }
