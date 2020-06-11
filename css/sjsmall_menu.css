@@ -1,10 +1,20 @@
+/*
+
+Made by Steven Small, 2020.06.11
+Copyright 2020
+All Rights Reserved
+
+*/
+
+
+
 /* Hamburger Items */
 .hamburger {
     position: relative;
-    width: 60px;
-    height: 60px;
     display: inline-block;
-    margin: 30px;
+    margin: 19px;
+	width: 50px;
+    height: 50px;
     /*margin-bottom: 70px;*/
     border: 2px solid #f1f1f1;
     border-radius: 15%;
@@ -82,8 +92,8 @@
     overflow: hidden;
     /* top right bottom left */
     margin:0 0 0 0;
-    /*width: 170px;*/
     height: 0px;
+	width: 0px;
     text-transform:lowercase;
     padding:2px 0px 0px 0px;
     border-top:1px solid lightgrey;
@@ -99,17 +109,16 @@
 }
 
 .dropdown-content.menuShow {
-    visibility: visible;
     margin-top: 0;
     box-shadow: 0 3px 8px #555;
     opacity: 1;
-    /*transform: translateY(40px);*/
-    /*width: 170px;*/
-    height: 12.60em;
+    height: auto;
+	width: auto;
+	visibility: visible;
 }
 
 .dropdown-texts {
-    font-size:26pt;
+    /*font-size:26pt; (nevermind this, just inherit it from page)*/
     border-bottom:1px solid lightgrey;
     border-radius: 10px;
     text-align: right;
@@ -133,12 +142,6 @@
     cursor: pointer;
 }
 
-
-/*.drop-links.menuShow {
-    position: relative ;
-    transition:300ms ease-out;
-    -webkit-transition: 300ms ease-out;
-}*/
 
 .dropdown-texts:hover {  
     color: #cc5500 !important;
