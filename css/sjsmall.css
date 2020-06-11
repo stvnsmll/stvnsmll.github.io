@@ -52,7 +52,7 @@ body {
     padding: 0.8em;
     background-color: #555;
     color: #f1f1f1;
-    font-size: 1.4em;
+    font-size: 18pt;
     font-weight: bold;
     transition: box-shadow 410ms ease-out;
      -webkit-transition: box-shadow 410ms ease-out;
@@ -115,16 +115,16 @@ body {
 	position: relative;
 	background: #ffe6e6;
 	/*float: left;*/
-    display: block;
+    	display: block;
 	margin-top: 20px;
-    margin-left: auto;
+    	margin-left: auto;
 	margin-right: auto;
 	border-radius: 7px;
 	box-shadow: 0 2px 6px #888888;
 	padding: 12px;
 	text-align: center;
-	text-size: 11pt;
-	width: 350px;
+	text-size: 14pt;
+	width: 370px;
 }
 
 
