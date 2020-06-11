@@ -46,14 +46,15 @@ body {
 .header {
     z-index: 1;
     min-width: 520px;
-    height: 88px;
 }
 
 .headerInner {
-    padding: 0.8em;
+    padding-top: 25px;
+    padding-left: 65px;
     background-color: #555;
     color: #f1f1f1;
-    font-size: 28pt;
+    height: 63px;
+    font-size: 26pt;
     font-weight: bold;
     transition: box-shadow 410ms ease-out;
      -webkit-transition: box-shadow 410ms ease-out;
