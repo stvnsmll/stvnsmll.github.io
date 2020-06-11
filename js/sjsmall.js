@@ -1,8 +1,16 @@
+//
+// Made by Steven Small, 2020.06.11
+// Copyright 2020
+// All Rights Reserved
+//
+
 var header;
 var headerInner;
 var portrait;
 var preHeaderExists;
 var sticky;
+var quoteShow1;
+var quoteShow2;
 
 //Listen for a click of the hamburger menu:
 window.onload = function () {
@@ -15,6 +23,8 @@ window.onload = function () {
         header = document.getElementById("stickyHeader");
         headerInner = document.getElementById("realHeader");
         portrait = document.getElementById("myPortrait");
+		quoteShow1 = document.getElementById("quoteID1");
+		quoteShow2 = document.getElementById("quoteID2");
         preHeaderExists = document.getElementById("preHeaderID");
         
         //Get the offset position of the navbar
@@ -39,6 +49,8 @@ function syickyHeaders() {
             header.classList.add("sticky");
             headerInner.classList.add("shadow");
             portrait.classList.add("stickyPortrait");
+			quoteShow1.classList.add("quoteShow");
+			quoteShow2.classList.add("quoteShow");
           } else {
             header.classList.remove("sticky");
             headerInner.classList.remove("shadow");
