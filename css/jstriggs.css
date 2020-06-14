@@ -104,4 +104,7 @@ span {
     cursor: pointer; 
 }
 
-
+.hiddenLink{
+    color: #aaa;
+	text-decoration: none !important;
+}
