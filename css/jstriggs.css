@@ -77,6 +77,7 @@ span {
 
 #hidden {
     color: rgba(255, 255, 255, 0);
+    text-decoration: none !important;
 }
 
 
@@ -102,9 +103,4 @@ span {
      -ms-filter: grayscale(0%); 
      -o-filter: grayscale(0%); 
     cursor: pointer; 
-}
-
-.hiddenLink{
-    color: #aaa;
-	text-decoration: none !important;
 }
