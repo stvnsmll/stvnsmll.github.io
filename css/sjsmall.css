@@ -65,7 +65,7 @@ body {
 .sticky {
 	position: fixed;
 	top: 0;
-	width: 100%
+	min-width: 520px;
 }
 
 
@@ -73,7 +73,7 @@ body {
 	width: 50%;
 	max-width: 250px;
 	border-radius: 50%;
-	margin-top: -50px;
+	margin-top: -20px;
 	margin-bottom: 20px;
 	border: 4px solid #cc5500;
 	box-shadow: 0 3px 8px #555;
