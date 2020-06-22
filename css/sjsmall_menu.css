@@ -88,7 +88,7 @@ All Rights Reserved
 	z-index: 0;
 	display: inline-block;
 	position: absolute;
-	right: 4px;
+	right: 1vw;
 	overflow: hidden;
 	/* top right bottom left */
 	margin:0 0 0 0;
