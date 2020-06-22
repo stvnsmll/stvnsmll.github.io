@@ -45,7 +45,7 @@ body {
 
 .header {
 	z-index: 1;
-	min-width: 520px;
+	width: 100%
 }
 
 .headerInner {
