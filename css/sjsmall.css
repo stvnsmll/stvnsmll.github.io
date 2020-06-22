@@ -12,7 +12,7 @@ body {
 	margin: 0;
 	font-family: 'Ubuntu', Helvetica, sans-serif;
 	font-size: 16pt;
-	min-width: 520px;
+	min-width: 420px;
 }
 
 /* Page content */
@@ -45,7 +45,7 @@ body {
 
 .header {
 	z-index: 1;
-	min-width: 520px;
+	min-width: 420px;
 }
 
 .headerInner {
