@@ -126,7 +126,7 @@ body {
 	padding: 12px;
 	text-align: center;
 	text-size: 12pt;
-	width: 315px;
+	max-width: 350px;
 }
 
 
