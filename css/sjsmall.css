@@ -12,7 +12,7 @@ body {
 	margin: 0;
 	font-family: 'Ubuntu', Helvetica, sans-serif;
 	font-size: 14pt;
-	min-width: 450px;
+	min-width: 320px;
 }
 
 /* Page content */
@@ -65,7 +65,7 @@ body {
 .sticky {
 	position: fixed;
 	top: 0;
-	min-width: 450px;
+	min-width: 320px;
 }
 
 
