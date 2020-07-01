@@ -12,11 +12,11 @@ html, body {
 
 h1 {
     font-weight: bold;
-    font-size: 6vw;
+    font-size: min(6vw, 74px);
 }
 
 p {
-    font-size: 3vw;
+    font-size: min(3vw, 36px);
 }
 
 .boxed {
