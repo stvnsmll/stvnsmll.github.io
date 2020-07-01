@@ -50,7 +50,7 @@ body {
 
 .headerInner {
 	padding-top: 25px;
-	padding-left: 65px;
+	padding-left: 15vw;
 	background-color: #555;
 	color: #f1f1f1;
 	height: 63px;
@@ -102,13 +102,14 @@ body {
 /* Responsive portrait for small screens */
 @media screen and (max-width: 450px) {
   .stickyPortrait {
-    width: 65px;
-    display: block;
-	border: 2px solid #cc5500;
-	position: fixed;
-	top: 0;
-	right: 0;
+	width: 65px;
 	margin: 10px 95px 3px 400px;
+  }
+  .headerInner {
+	padding-left: 25px;
+  }
+  .content {
+    padding: 1px 50px 230px 50px;
   }
 }
 
