@@ -99,6 +99,19 @@ body {
 	border: 2px solid #cc5500;
 }
 
+/* Responsive portrait for small screens */
+@media screen and (max-width: 450px) {
+  .stickyPortrait {
+    width: 65px;
+    display: block;
+	border: 2px solid #cc5500;
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 10px 95px 3px 400px;
+  }
+}
+
 .hiddenlink {
 	color: #004d99;
 	text-decoration: none !important;
