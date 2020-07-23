@@ -46,15 +46,20 @@ function syickyHeaders() {
           //}
           //eHeaderExists);
           if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
+			  if (portrait != null) {
+				header.classList.add("sticky");
+				portrait.classList.add("stickyPortrait");
+			  }
             headerInner.classList.add("shadow");
-            portrait.classList.add("stickyPortrait");
 			quoteShow1.classList.add("quoteShow");
 			quoteShow2.classList.add("quoteShow");
           } else {
-            header.classList.remove("sticky");
+			  if (portrait != null) {
+				header.classList.remove("sticky");
+				portrait.classList.remove("stickyPortrait");
+			  }
             headerInner.classList.remove("shadow");
-            portrait.classList.remove("stickyPortrait");
+            
           }
         }
           
