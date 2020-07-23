@@ -1,22 +1,34 @@
 <!DOCTYPE html>
+
+<!--
+   Made by Steven Small, 2020.06.11
+    Copyright 2020
+    All Rights Reserved
+    v0.015
+-->
+
 <html>
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../css/sjsmall.css">
         <link rel="stylesheet" type="text/css" href="../css/sjsmall_menu.css">
+		
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="../js/sjsmall.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <title>Portfolio</title>
+        <title>SSmall Portfolio</title>
         
     </head>
     <body>
+		<!-- To use a header, you need to re-enable some sticky things.  See the index page.-->
+		
         <!--<div class="preHeader" id="preHeaderID">
             <p>welcome <br> to <br> awesome</p>
         </div>-->
         
-        <div class="header" id="stickyHeader">
+        <div class="header sticky" id="stickyHeader">
             
             <!-- These are the hamburger X's -->
             <div class="hamburger" id="myMenu">
@@ -41,16 +53,17 @@
             </div>
             
         </div>
+		
+		<img class="stickyPortrait" id="myPortrait-TOP" src="https://nextcloud.kleinefamilie.tk/apps/files_sharing/publicpreview/amE3yNkfSDX3HN7?x=1268&y=490&a=true&file=SSmall_Portrait.png&scalingup=0" alt="My Portrait">
         
-        <div class="content">
-            <img class="portrait" id="myPortrait" src="https://nextcloud.kleinefamilie.tk/s/WqqeGNQtMYKesa7/preview" alt="My Portrait">
+        <div class="content-NoPortrait">
 			
 			<!-- Page Content -->
-			This is where I will show many of my projects...<br>
-			This website, for example, is 100% made from scratch by me -- except for the icons in the menu.<br>
+			This is where I will show many of my projects... probably card view?<br>
+			I made this website, for example, without the backbone on any "make your homepage" pre-fabricated tool.<br>
 			The site is still under construction, so (obviously) more to come.
 			
-			<br><br>
+			<br><br><br><br><br><br><br><br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum, orci et pretium faucibus, tellus sapien bibendum orci, nec sagittis augue justo at ante. Aliquam erat volutpat. Suspendisse hendrerit sed neque sit amet elementum. Ut lacinia pharetra sagittis. Nunc sed egestas tortor. Sed sit amet sagittis turpis, ac pharetra ex. Nulla congue vestibulum arcu in eleifend. Nullam vitae libero vitae est pellentesque placerat.
 			<br><br>
 			Cras lacinia, arcu eu accumsan convallis, velit felis bibendum dui, faucibus elementum massa tellus vitae lacus. Praesent convallis metus nulla, eget ultricies enim pellentesque vel. Etiam dapibus nec sem a mattis. Pellentesque eu scelerisque nulla. Cras eu tortor velit. Suspendisse potenti. In ut tincidunt tortor. Nam interdum gravida lorem vel condimentum. Quisque faucibus augue id metus aliquet imperdiet. Sed vitae ultricies enim.
@@ -59,16 +72,15 @@
 			<br><br>
 			Donec nisi orci, euismod in quam at, euismod faucibus felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque ornare magna tristique dui semper, vel pharetra ex pulvinar. Ut ut ipsum non lacus malesuada vestibulum et non leo. Sed eget justo malesuada, tempus neque ac, pulvinar sapien. Suspendisse commodo rhoncus nulla eget venenatis. Duis efficitur sapien at volutpat fringilla.
         </div>
-	
-	<div class="footer" id="footerID">
-		&copy 2019 -
-			<script type="text/JavaScript">
-			document.write(new Date().getFullYear());
-			</script>
-		Steven Small
-		<br>
-		All Rights Reserved
-	</div>
-	
+		
+		<div class="footer" id="footerID">
+			&copy 2019 -
+				<script type="text/JavaScript">
+				document.write(new Date().getFullYear());
+				</script>
+			Steven Small
+			<br>
+			All Rights Reserved
+		</div>
     </body>
 </html>
