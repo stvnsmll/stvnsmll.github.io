@@ -24,7 +24,7 @@
 		185deg/*to bottom*/,
 		#f8f8f8 0% 46%,
 		rgba(0, 0, 0, 0.1) 53.1% 53.2%,
-		#cc5500 53.2% 120%
+		#cc5500 53.3% 120%
 	);
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
@@ -53,6 +53,9 @@
 	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 	margin: 2em 1em 2em 1em;
 	transition: transform 0.3s linear;
+	 -webkit-transition: transform 0.3s linear;
+	 -moz-transition: transform 0.3s linear;
+	 -o-transition: transform 0.3s linear;
 	box-sizing: border-box;
 }
 
@@ -78,6 +81,10 @@
 	font-size: 1em;
 	position: relative;
 	transition: color 0.3s linear;
+	 -webkit-transition: color 0.3s linear;
+	 -moz-transition: color 0.3s linear;
+	 -o-transition: color 0.3s linear;
+	
 }
 
 .container__item p {
@@ -86,6 +93,9 @@
 	color: #666;
 	position: relative;
 	transition: color 0.3s linear;
+	 -webkit-transition: color 0.3s linear;
+	 -moz-transition: color 0.3s linear;
+	 -o-transition: color 0.3s linear;
 	font-size: 14px;
 	line-height: 1.5em;
 }
@@ -96,6 +106,9 @@
 	color: #666;
 	opacity: 0.1;
 	transition: top 0.3s linear, color 0.3s linear, opacity 0.3s linear;
+	 -webkit-transition: top 0.3s linear, color 0.3s linear, opacity 0.3s linear;
+	 -moz-transition: top 0.3s linear, color 0.3s linear, opacity 0.3s linear;
+	 -o-transition: top 0.3s linear, color 0.3s linear, opacity 0.3s linear;
 }
 
 .container__item:hover h1 {
@@ -118,6 +131,9 @@
 	
 	background-color: #636363;
 	transition: transform 0.3s linear;
+	 -webkit-transition: transform 0.3s linear;
+	 -moz-transition: transform 0.3s linear;
+	 -o-transition: transform 0.3s linear;
 	transform: scaleY(0);
 	transform-origin: top;
 }
@@ -137,7 +153,10 @@
 	margin: 0 16px 14px 0;
 	padding: 5px;
 	border-radius: 10px;
-	transition: color 0.2s linear;
+	transition: background-color 0.1s linear, box-shadow 0.1s linear;
+	 -webkit-transition: background-color 0.1s linear, box-shadow 0.1s linear;
+	 -moz-transition: background-color 0.1s linear, box-shadow 0.1s linear;
+	 -o-transition: background-color 0.1s linear, box-shadow 0.1s linear;
 }
 
 .go_arrow:hover{ 
