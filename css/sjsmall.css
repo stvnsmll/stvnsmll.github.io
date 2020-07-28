@@ -111,7 +111,7 @@ body {
 	height: 42px;
 	font-size: 21pt;
 	font-weight: bold;
-	border-bottom: 2px dotted #58b96b;
+	border-bottom: 2px dotted #cc5500; /*#58b96b;*/
 	border-radius: 20px;
 }
 
