@@ -87,8 +87,14 @@ function syickyHeaders() {
 	//document.documentElement.scrollTop = sticky;
 }
 
+function scrollOnce() {
+	var myElement = document.getElementById('PortfolioSection');
+	var topPos = myElement.offsetTop;
+	window.scrollTo({top: topPos, behavior: 'auto'});
+}
+
 function bumpPageDown(){
-	mainContent.classList.remove("offsetPreHeader")
+	mainContent.classList.remove("offsetPreHeader");
 }
 
 //Listen for a click outside of the hamburger - close the menu if so:
