@@ -65,7 +65,7 @@
 	z-index: 5;
 }
 
-.container__item h1, h3, p {
+.container__item h1, h3, p, strong {
 	margin: 0;
 	padding: 0;
 }
@@ -88,7 +88,7 @@
 	
 }
 
-.container__item p {
+.container__item p, strong {
 	margin-bottom: 1em;
 	margin-top: 0.5em;
 	color: #666;
