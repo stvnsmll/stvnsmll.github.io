@@ -84,7 +84,7 @@ All Rights Reserved
 /* Dropdown Menu Items */
 .dropdown-content {
     visibility: hidden;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 0;
     position: absolute;
     right: 4px;
@@ -101,7 +101,7 @@ All Rights Reserved
      -webkit-transition: 310ms ease-out;
      -moz-transition: 310ms ease-out;
      -o-transition: 310ms ease-out;
-    background-color: rgba(245, 245, 245, 0.85);
+    background-color: rgba(245, 245, 245, 0.9);
     border-radius: 0 0 11px 11px;
     display: block;
 
