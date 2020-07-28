@@ -103,7 +103,7 @@
 
 .container__item h1 {
 	position: relative;
-	top: 21px;
+	top: 28px;
 	color: #666;
 	opacity: 0.1;
 	transition: top 0.3s linear, color 0.3s linear, opacity 0.3s linear;
