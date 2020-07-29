@@ -41,6 +41,18 @@ body {
 	font-size: 14pt;
 }
 
+.content-flickity {
+	/*border: 2px dashed black;*/
+	padding: 60px 0px 30px 0px;
+	background: #f8f8f8;
+	text-align: left;
+	margin-top: 0px;
+	margin-left: 0;
+	margin-right: 0;
+	z-index: 0;
+	font-size: 14pt;
+}
+
 .preHeader {
 	padding: 3px;
 	background: #cc5500;
@@ -123,29 +135,6 @@ body {
 	z-index: 15;
 }
 
-/* Responsive portrait for small screens */
-@media screen and (max-width: 550px) {
-  .portraitBoundary {
-	padding-left: 65px;
-	margin: -20px 20px 15px 20px;
-	z-index: 15;
-  }
-  .stickyPortrait {
-	width: 65px;
-	margin: 10px 95px 3px 400px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
-  }
-  .headerInner {
-	padding-left: 25px;
-  }
-  .content {
-    padding-left: 20px;
-	padding-right: 20px;
-  }
-  .content-NoPortrait {
-    padding: 130px 20px 230px 20px;
-  }
-}
 
 .sectionHeader {
 	font-family: 'Ubuntu', Helvetica, sans-serif;
@@ -171,7 +160,7 @@ body {
 }
 
 .shadow {
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+   	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .offsetPreHeader {
@@ -193,23 +182,6 @@ body {
 	text-size: 12pt;
 	max-width: 350px;
 }
-
-
-.footer {
-	
-	background: #cccccc;
-	color: #808080;
-	text-align: center;
-		  /* top right bottom left */
-	padding: 20px 120px 80px 120px;
-	margin-top: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 0;
-	font-size: 10pt;
-}
-
-
 
 .topBtn {
 	position: fixed;
@@ -240,7 +212,7 @@ body {
 }
 .topHide {
 	visibility: hidden;
-	bottom: -20px;
+	bottom: 0px;
 	opacity: 0;
 }
 
@@ -267,4 +239,141 @@ body {
 	height: 80px;
 	/*background-color: white;
 	border: 1px dashed lightgray*/
+}
+
+
+	
+.contact_window {
+	font-size: 14pt;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	text-align: left;
+	padding: 30px;
+	border: 2px solid #cc5500;
+	background-color: #f1f1f1;
+	width: 485px;
+	max-width: 840px;
+	border-radius: 20px 0 20px 0;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #58b96b;
+	float: right;
+	font-size: 1.2em;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: box-shadow 120ms ease-in;
+	 -webkit-transition: box-shadow 120ms ease-in;
+	 -moz-transition: box-shadow 120ms ease-in;
+	 -o-transition: box-shadow 120ms ease-in;
+}
+
+input[type=submit]:hover {
+  background-color: #4bb460;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.share_buttons {
+	height: 35px;
+}
+
+.contact_button {
+	height: 35px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 1;
+    display: inline;
+	opacity: 0.2;
+    filter: none;
+     -webkit-filter: grayscale(100%); 
+     -moz-filter: grayscale(100%); 
+     -ms-filter: grayscale(100%); 
+     -o-filter: grayscale(100%);
+    cursor: pointer; 
+    transition: all 400ms ease;
+}
+
+.contact_button:hover { 
+	opacity: 1;
+    filter: none; 
+     -webkit-filter: grayscale(0%); 
+     -moz-filter: grayscale(0%); 
+     -ms-filter: grayscale(0%); 
+     -o-filter: grayscale(0%); 
+    cursor: pointer; 
+}
+
+
+.footer {
+	
+	background: #cccccc;
+	color: #808080;
+	text-align: center;
+		  /* top right bottom left */
+	padding: 20px 120px 80px 120px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 0;
+	font-size: 10pt;
+}
+
+
+
+/* Responsive portrait for small screens */
+@media screen and (max-width: 550px) {
+  .portraitBoundary {
+	padding-left: 65px;
+	margin: -20px 20px 15px 20px;
+	z-index: 15;
+  }
+  .stickyPortrait {
+	width: 65px;
+	margin: 10px 95px 3px 400px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+  }
+  .headerInner {
+	padding-left: 25px;
+  }
+  .content {
+    padding-left: 20px;
+	padding-right: 20px;
+  }
+  .content-NoPortrait {
+    padding: 130px 20px 230px 20px;
+  }
+  .contact_window {
+	padding: 15px;
+	border: 1px solid #cc5500;
+	width: 320px;
+  }
 }
