@@ -1,379 +1,480 @@
-/*
-Made by Steven Small, 2020.06.11
-Copyright 2020
-All Rights Reserved
-*/
+<!DOCTYPE html>
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+<!--
+   Made by Steven Small, 2020.06.11
+    Copyright 2020
+    All Rights Reserved
+    v0.015
+-->
 
-html {
-  scroll-behavior: smooth;
-}
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sjsmall.css">
+        <link rel="stylesheet" type="text/css" href="css/sjsmall_menu.css">
+		<link rel="stylesheet" type="text/css" href="css/sjsmall_timeline.css">
+		<link rel="stylesheet" type="text/css" href="css/sjsmall_cards.css">
+		<!--These items for the carousel:  -->
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+			<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+			<link rel="stylesheet" href="../css/flickity.css" media="screen">
+			<script src="js/flickity.pkgd.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="css/sjsmall_hobbies.css">
+			
+        <script src="js/sjsmall_menu.js"></script>
+		<script src="js/sjsmall.js"></script>
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+        <title>SJSmall</title>
+        
+    </head>
+    <body>
+        <div class="preHeader" id="preHeaderID">
+            
+			<p>
+			<span class="quote" id="quoteID1">
+				"
+			</span>
+			
+			an<br> &nbsp unexpected<br> &nbsp journey
+			
+			<span class="quote" id="quoteID2">
+				" <i>- J.R.R. Tolkien</i>
+			</span>
+			</p>
+        </div>
+        
+        <div class="header" id="stickyHeader">
+            
+            <!-- These are the hamburger X's -->
+            <div class="hamburger" id="myMenu">
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </div>
+            
+            <div class="headerInner" id="realHeader">
+                SJSmall.
+            </div>
+            
+            <!-- These are the drop-down menu items -->
+            <div class=dropdown-content>
+                <a class=drop-links onclick="topFunction()"><p class=dropdown-texts>  About Me <i class="fa fa-info-circle"></i></p></a>
+                <a class=drop-links href="#PortfolioSection"><p class=dropdown-texts> Portfolio <i class="fa fa-clipboard"></i></p></a>
+                <a class=drop-links href="#TimelineSection"><p class=dropdown-texts> Education <i class="fa fa-graduation-cap"></i></p></a>
+                <a class=drop-links href="#HobbiesSection"><p class=dropdown-texts> Hobbies <i class="fa fa-soccer-ball-o"></i></p></a>
+                <a class=drop-links href="#ContactMeSection"><p class=dropdown-texts> Contact <i class="fa fa-envelope"></i></p></a>
+                <a class=drop-links href="#BlogSection(actuallyexternal)"><p class=dropdown-texts> My Blog <i class="fa fa-external-link"></i></p></a><!--"fa fa-pencil-square-o"-->
+            </div>
+            
+        </div>
+		
+		<!--<button onclick="topFunction()" id="toTopBtn" title="Go to top">-->
+		<div class="topBtn topHide" id="toTopBtn" onclick="topFunction()">
+			<i class="arrow up"></i></i>
+		</div>
+		
+		<div class="portraitBoundary">
+				<img class="portrait" id="myPortrait" src="https://nextcloud.kleinefamilie.tk/s/HeEfRa3RdqNLeNt/preview" alt="My Portrait">
+		</div>
+		
 
-body {
-	margin: 0;
-	font-family: 'Ubuntu', Helvetica, sans-serif;
-	font-size: 14pt;
-	min-width: 320px;
-	background-color: white;
-}
+		
+        <div class="content" id="mainContent">
+			
+			<!-- Website Content -->
+			
+			
+			<!-- About Me Section -->
+			<span id="AboutMe"></span>
+			<div class="sectionHeader">About Me</div>
+			An unexpected journey??? Yup. After nearly 10 years as a mechanical engineer I realized that my passion is programming.
+			I would make myself tools to use in my engineering work - ranging from simple scripts to more complex programs.
 
-/* Page content */
-.content {
-	padding: 1px 60px 60px 60px;
-	text-align: left;
-	margin: 0 auto auto auto;
-	max-width: 840px;
-	z-index: 0;
-	font-size: 14pt;
-}
+			Eventually I got to the point where I rolled out some of my tools to other users.  With this came installation 
+			(and uninstallation) scripts, revision tracking, pushed updates, usage tracking, a website for help and instructions, 
+			among other complexities.
 
-/* Page content */
-.content-NoPortrait {
-	padding: 80px 60px 60px 60px;
-	text-align: left;
-	margin-top: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 840px;
-	z-index: 0;
-	font-size: 14pt;
-}
+			<br><br>
+			
+			I've enjoyed my time as a mechanical engineer, but I found myself always thinking about my tools and wanting to spend 
+			my work hours adding new features and bug fixing. Frequently while programming, I may glance at the clock and wonder 
+			where the hours went.
 
-.content-flickity {
-	/*border: 2px dashed black;*/
-	padding: 60px 0px 30px 0px;
-	background: #f8f8f8;
-	text-align: left;
-	margin-top: 0px;
-	margin-left: 0;
-	margin-right: 0;
-	z-index: 0;
-	font-size: 14pt;
-}
+			<br><br>
+			
+			While at home on paternity leave with my first child, I used the hours of rocking to teach myself Python basics. When 
+			home with my second, I learned web development languages (HTML, CSS, and JavaScript).  I've tried to find ways to 
+			practice and develop my skills and really had some fun with 
+			<a class=hiddenlink href="https://adventofcode.com/2019/about" target="_blank">Advent of Code 2019</a>
+			at the recommendation of my sister and brother-in-law (both programmers).
 
-.preHeader {
-	padding: 3px;
-	background: #cc5500;
-	text-align: left;
-	padding-left: 20%;
-}
+			<div class="shoutout">
+			Big shoutout to my little sis! Although you could have easily excelled in Law, you quit to pursue programming. You've 
+			been an inspiration and motivation for me to follow what I love to do too.
+			</div>
 
-.quote {
-	visibility: hidden;
-	font-size: 11pt;
-}
+			<br><br>
+			
+			Cruise around the site to see more about my portfolio, education, blog, and hobbies. Any feedback about this 
+			site or any of projects is always welcome!
+			<br><br><br>
+			<small>Quote Credit: "an unexpected journey" - <i>J.R.R. Tolkien</i></small>
+		
+		</div>
+		
+		<div class="content-NoPortrait">
+			<!-- Portfolio Section -->
+			<span id="PortfolioSection"></span>
+			<div class="blankspace"></div>
+			<div class="sectionHeader">My Portfolio</div>
+			<div class="card_container">
+				<div class="container__item">
+					<h1>01</h1>
+					<h3>Engineering Efficiency Tools</h3>
+					<p>
+					Here are the tools that I developed for use in my mechanical engineering work. Most scripts are quite simple and were written in vbscript and/or HTA.
+					They were designed for use on Windows machines only, and require internal network access to fully function. I've included snapshots of any GUI and 
+					description of what each program does. 
+					</p>
+					<span class="go_arrow"><i class="arrow right"></i><i class="arrow right"></i></span>
+				</div>
+				<div class="container__item">
+					<h1>02</h1>
+					<h3>Personal Projects</h3>
+					<p>
+					<strong>Home Cloud:</strong> First Linux, then Docker, MySQL, Apache server,and finally Nextcloud. During all of this I had to learn about httpS, DNS, 
+					and other details around web server housing and internet security. This was a fun personal project that I love and use daily!<br>
+					<strong>Childcare Share:</strong> This will be multi-platform web app to help track and manage babysitting among families. <small>[under development]</small>
+					</p>
+					<span class="go_arrow"><i class="arrow right"></i><i class="arrow right"></i></span>
+				</div>
+				<div class="container__item">
+					<h1>03</h1>
+					<h3>Coursework</h3>
+					<p>
+					I've pulled a few examples from my programming courses to show the skillsets that I have developed over the past few years. There is a wode range in 
+					complexity that I share here.
+					</p>
+					<span class="go_arrow"><i class="arrow right"></i><i class="arrow right"></i></span>
+				</div>
+					<div class="container__item">
+					<h1>04</h1>
+					<h3>Advent of Code</h3>
+					<p>
+					This past winter (2019), I really enjoyed the challenge of AoC using Python. I completed 11 of thr 25 puzzles, getting 19 stars (during the challenge). 
+					I went back and completed the rest later in the year as time permitted. <br>Hopefully as you look through my solutions you can see how I think and solve 
+					problems.
+					</p>
+					<span class="go_arrow"><i class="arrow right"></i><i class="arrow right"></i></span>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="content">
+			<span id="TimelineSection"></span>
+			<div class="blankspace"></div>
+			<div class="sectionHeader">My Education</div>
+			<!-- Education Section (Timeline) -->
+			Everyone's story is different. And that's great, because innovation thrives on diversity.<br>
+			This timeline of my education gives a glimpse at how I got to where I am now. I've highlighted some specific programming experience, but added other items in too.<br>
+			<br>
+			
+			<div class="myTimeline">
+			
+				<ul class="timeline">
+				<!--
+				1989-1993: Seattle, WA
+				93-97: Rio, Brazil, preschool, 1st, 2nd grade
+				97-01: Louisville, KY, 3rd, 4th, 5th grads, Anchorage KY
+				01-03: 6th, 7th, 8th grade, Seoul, S. Korea
+				03-07: High School, Seoul, S. Korea
+				07-11: University, Cedarville, OH
+				-->
 
-.quoteShow{
-	visibility: visible;
-}
+				  <!-- Item 1 -->
+				  <li>
+					<div class="direction-r">
+					  <div class="flag-wrapper">
+						<span class="flag">High School</span>
+						<span class="time-wrapper"><span class="time">2003 - 2007</span></span>
+					  </div>
+					  <div class="desc">
+						<strong>Seoul Foreign School<br>South Korea</strong><br>
+						I took some introduction classes to programming.  Using Visual Basic, I developed a simple game where you navigate an avatar through a hidden maze,
+						collect keys and weapons, unlock doors, and fight monsters.<!--<br>
+						I also was introduced to Flash and made some simple animations.-->
+						<br>
+						<span class="language">>> Visual Basic <<</span>
+					  </div>
+					</div>
+				  </li>
 
-.header {
-	z-index: 10;
-	width: 100%
-}
+				  <!-- Item 2 -->
+				  <li>
+					<div class="direction-l">
+					  <div class="flag-wrapper">
+						<span class="flag">University</span>
+						<span class="time-wrapper"><span class="time">2007 - 2011</span></span>
+					  </div>
+					  <div class="desc">
+						<strong>Mechanical Engineering<br>Cedarville University, Ohio</strong><br>
+						The next four years I spent learning how to learn.<br>
+						Engineering school introduced me to higher levels of mathematics, statistics, critical thinking, and problem solving.  I learned Matlab (C-style)
+						probramming as well as a deeper level of MS Excel proficciency. My Visual Basic skills came back to me as I used them to create nice macros to run within 
+						Excel.
+						<br>
+						<span class="language">>> Matlab, VBA- Excel Macros <<</span>
+					  </div>
+					</div>
+				  </li>
 
-.headerInner {
-	padding-top: 25px;
-	padding-left: 15vw;
-	background-color: #555;
-	color: #f1f1f1;
-	height: 63px;
-	font-size: 24pt;
-	font-weight: bold;
-	transition: box-shadow 410ms ease-out;
-	 -webkit-transition: box-shadow 410ms ease-out;
-	 -moz-transition: box-shadow 410ms ease-out;
-	 -o-transition: box-shadow 410ms ease-out;
-}
+				  <!-- Item 3 -->
+				  <li>
+					<div class="direction-r">
+					  <div class="flag-wrapper">
+						<span class="flag">Engineering Internships</span>
+						<span class="time-wrapper"><span class="time">Summers '10, '11</span></span>
+					  </div>
+					  <div class="desc">
+						<strong>Insitu Inc.<br>Washington<br></strong>
+						In both of these engineering internships, I setup and managed the data collection, transfer, and storage of flight data for the UAV test flights.
+						The second year I set up automatic data reports that could be generated from the flight data. Based on the tools I knew at the time, I set all
+						of this up using Excel and integrated VBA macros.
+						</br>
+						<span class="language">>> VBA- Excel Macros <<</span>
+					  </div>
+					</div>
+				  </li>
+				  
+				  
+				  <!-- Item 4 -->
+				  <li>
+					<div class="direction-l">
+					  <div class="flag-wrapper">
+						<span class="flag">Mechanical Engineer</span>
+						<span class="time-wrapper"><span class="time">2011-Current</span></span>
+					  </div>
+					  <div class="desc">
+						<strong>Cummins Inc.<br>Indiana<br></strong>
+						Right out of college, I jumped into mechanical engineering as a design engineer for Cummins Inc.  I was on the forefront of pushing newer clean diesel
+						engines. During my 6 years as a design engineer, I created 3D models of engine components, had them prototyped, tested, and sent into full production.
+						Beyond growing my engineering skills, I learned critical program management and schedule tracking skills.  I used my Excel and macro experience to
+						develop powerful tools for myself and my colleagues. I have been working as the last few years as a validation mechanical engineer, planning, testing,
+						breaking, and fixing engine hardware.<br>
+						Inefficiencies drive me crazy.  I started making solutions to anything that slowed me down.  I made some HTA tools and shorrcut windows to help with 
+						mundane tasks. A few of these tools were quite complex, with installation (and uninstallation) scripts, revision tracking, auto-updates, usage and help
+						websites, etc.  More details can be found in my portfolio page (under the Engineering Tools section).
+						<br>
+						<span class="language">>> VBA- Excel Macros, HTA, VBscript, Python<<</span>
+					  </div>
+					</div>
+				  </li>
+				  
 
-.sticky {
-	position: fixed;
-	top: 0;
-	min-width: 320px;
-}
+				  <!-- Item 5 -->
+				  <li>
+					<div class="direction-r">
+					  <div class="flag-wrapper">
+						<span class="flag">Self-Taught Programming</span>
+						<span class="time-wrapper"><span class="time">2018-Current</span></span>
+					  </div>
+					  <div class="desc">
+						<strong>Online<br></strong>
+						During paternity leave with my two children and with the limited free time that I had, I spent it studying various programming langauges and concepts. Initially I wanted
+						to just learn Python to apply the language in my engineering work.  I kept getting more interested the more I learned.  I learned about Free and Open Source software and 
+						got really into privacy and security.  See my next timeline item...  I thought it would be fun to host my own website, and learned the basics of web development too.<br>
+						Over time, my interest kept growing. I kept finding more and more resources to lear online.  I'm currenly half way through Harvard's CS50 online course and am getting a
+						great overview into computer science.
+						<br>
+						<span class="language">>> Python, HTML, CSS, JavaScript, PHP, SQL, C <<</span>
+					  </div>
+					</div>
+				  </li>
+				  
+				  
+				  <!-- Item 6 -->
+				  <li>
+					<div class="direction-l">
+					  <div class="flag-wrapper">
+						<span class="flag">Self-Hosting</span>
+						<span class="time-wrapper"><span class="time">2019-Current</span></span>
+					  </div>
+					  <div class="desc">
+						<strong>Nextcloud<br></strong>
+						I went through a phase where I challenged myself to see how much I could get away from the big web companies.  Personal data collection and selling of user information for 
+						targeted advertising is not the model of internet usage that I want to see. Until something better arises, I wanted to see how much I could self host myself.  I tried out  
+						<a class=hiddenlink href="https://nextcloud.com/" target="_blank">Nextcloud</a> as a free service then realized how easy it is to set up and self-host. I purchased an old
+						laptop, wiped Windows from it and replaced it with Linux. Learning each tool along the way, I now have an operational home server running a self-hosted Nextcloud platform.
+						I now keep all of my personal files, notes, contacts, to-do kanban, and calendar within the walls of my own house.  Well, I still keep encrypted monthly back-ups of my data
+						on a hard drive and uploaded to cloud file storage.
+						<br>
+						<span class="language">>> Linux, Docker, SQL, Apache HTTP Server<<</span>
+					  </div>
+					</div>
+				  </li>
 
-.portraitBoundary {
-	margin-top: -20px;
-	margin-left: 60px;
-	margin-right: 60px;
-	margin-bottom: 0px;
-	padding-left: 30px;
-	width: auto;
-	height: auto;
-	/*border: 1px dashed grey;*/
-	z-index: 14;
-}
+				</ul>
+			</div>
+		
+		
+			<br>
+			So, what's next?<br>
+			I'm considering more <a class=hiddenlink href="https://ossu.firebaseapp.com/#/curriculum" target="_blank">online courses</a> for now, but who can tell what the future holds?<br>
+			<small><small>especially in 2020!!</small></small><br>
+		</div>
+		
 
-.portrait {
-	margin: auto;
-	margin: 0px auto 0px auto;
-	width: 50%;
-	border-radius: 50%;
-	border: 4px solid #cc5500;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7); /*0 3px 8px #555;*/
-	max-width: 320px;	
-	display: block;
-	transition: width 85ms ease-in, box-shadow 85ms ease-in;
-	 -webkit-transition: width 85ms ease-in, box-shadow 85ms ease-in;
-	 -moz-transition: width 85ms ease-in, box-shadow 85ms ease-in;
-	 -o-transition: width 85ms ease-in, box-shadow 85ms ease-in;
-	 z-index: 15;
-}
+		<span id="HobbiesSection"></span>
+		<div class="blankspace"></div>
+		<div class="sectionHeader">My Hobbies</div>
+        <div class="content-flickity">
+			
+			<!-- Page Content -->
+			<!-- Flickity HTML init -->
+			<div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": 3000 }'>
+			  <!-- images from unsplash.com -->
+			  
+			  <div class="carousel-cell">
+				<div class="slider__contents"><i class="slider__image fa fa-music"></i>
+				  <h2 class="slider__caption">Violin</h2>
+				  <p class="slider__txt">I love music. I started playing violin over 20 years ago, and have also picked up mandolin,  guitar, 
+				  trombone, tuba, and more over the years. Music helps me unwind and reset my thoughts.</p>
+				</div>
+			  </div>
+			  <div class="carousel-cell">
+				<div class="slider__contents"><i class="slider__image fa fa-certificate"></i>
+				  <h2 class="slider__caption">Baking Bread</h2>
+				  <p class="slider__txt">White stuck at home during the 2020 COVID-19 quarantine, I learned how to bake sourdough bread. In the 
+				  first four months I baked <a class=hiddenlink href="https://nextcloud.kleinefamilie.tk/s/cnfm6tJmmR7NJpL/preview" target="_blank">30 loaves</a>! It has 
+				  been a deliciously satisfying new challenge.</p>
+				</div>
+			  </div>
+			  <div class="carousel-cell">
+				<div class="slider__contents"><i class="slider__image fa fa-globe"></i>
+				  <h2 class="slider__caption">Traveling</h2>
+				  <p class="slider__txt">Growing up on three continents and visiting family members all over the world, I have developed a love for exploring 
+				  cultures, foods, and historic sites. The more I see, the more I realize how much more there is yet to see.</p>
+				</div>
+			  </div>
+			  <div class="carousel-cell">
+				<div class="slider__contents"><i class="slider__image fa fa-futbol-o"></i>
+				  <h2 class="slider__caption">Soccer</h2>
+				  <p class="slider__txt">I like to be active, get outside, and be competitive. Whether pick-up or organized leagues, I've been playing soccer longer than I can remember.</p>
+				</div>
+			  </div>
+			  <div class="carousel-cell">
+				<div class="slider__contents"><i class="slider__image fa fa-fort-awesome"></i>
+				  <h2 class="slider__caption">Family Outings</h2>
+				  <p class="slider__txt">Above all, I love spending time with my wife and two children. We like exploring nature with hikes, swimming in waterfalls, and looking at animal tracks.</p>
+				</div>
+			  </div>
+			  <div class="carousel-cell">
+				<div class="slider__contents"><i class="slider__image fa fa-envira"></i>
+				  <h2 class="slider__caption">Living Green</h2>
+				  <p class="slider__txt">I try to do my part in making our world cleaner by reducing consumption, reusing as much as possible, and supporting ethically made and sourced products. <br>"Every dollar you spend . . . or <i>don't</i> spend . . . is a vote you cast for the world you want." <small>- LN Smith</small></p>
+				</div>
+			  </div>
+			  
+			</div>
 
-.stickyPortrait {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 90px;
-	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
-	/*     top right bottom left */
-	margin: 10px 135px 3px auto;
-	border: 2px solid #cc5500;
-	/*transform: translate(58vw, 55px);*/
-	z-index: 15;
-}
+		</div>
+		
+		
+		<span id="ContactMeSection"></span>
+		<div class="blankspace"></div>	
+		<div class="sectionHeader">Contact Me</div>
+			<div class="content" style="text-align:center">
+				<div class="share-buttons" style="height:60px; text-align:center"> 
+					<!-- LinkedIn --> 
+					<div class="contact_button">
+						<a href="https://www.linkedin.com/in/steven-small" target="_blank" style="height:100%"> 
+						<img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" style="height:100%"/></a>
+					</div>
+					
+					<!-- Github -->
+					<div class="contact_button">
+						<a href="https://github.com/stvnsmll" target="_blank"> 
+						<img src="media/icn/github.png" alt="GitHub" style="height:100%"/></a>
+					</div>
+					
+					<!-- Email -->
+					<div class="contact_button">
+						<a href="mailto: jstriggswebsite@securesteve.33mail.com?subject=Website%20generated%20email&body=Cool%20website,%20Jeff!"> 
+						<img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" style="height:100%"/></a>
+					</div>
+				</div>
+				<br>
+				<p> Feel free to reach out and contact me.  I'm new to the developer world and I have a lot to learn. <br>
+				I'd appreciate any feedback on this website or any of the projects that I've shared.  I'm currently working 
+				full time, but would enjoy spending some of my free time supporting projects that you may have on the side.
+				<br>
+				<br>
+				<br>
+			</div>
+			
+			<div class="contact_window">
+				<form action="/action_page.php">
+					<label for="yname">Your name</label>
+					<input type="text" id="yname" name="sendername" placeholder="Your name..">
 
+					<label for="yemail">Your email</label>
+					<input type="email" id="yemail" name="senderemail" placeholder="you@something.com">
 
-.sectionHeader {
-	font-family: 'Ubuntu', Helvetica, sans-serif;
-	margin: 60px auto 30px auto;
-	padding: 15px 5px 0px 5px;
-	width: 280px;
-	text-align: center;
-	color: #555;
-	height: 42px;
-	font-size: 21pt;
-	font-weight: bold;
-	border-bottom: 2px dotted #cc5500; /*#58b96b;*/
-	border-radius: 20px;
-}
+					<label for="subject">Message</label>
+					<textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
 
-.hiddenlink {
-	color: #004d99;
-	text-decoration: none	;
-}
+					<label for="CV_request">For a copy of one of my CVs, please select it here:</label><br>
+					&nbsp <input type="checkbox" name="CV" value="ME_Resume"> Mechanical Engineering CV<br>
+					&nbsp <input type="checkbox" name="CV" value="Prog_Resume"> Programming CV<br><br>
 
-.hiddenlink:hover{
-	text-decoration: underline;
-}
-
-.shadow {
-   	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-}
-
-.offsetPreHeader {
-	padding-top: 80px;
-}
-
-.shoutout{
-	position: relative;
-	background: #ffe6e6;
-	/*float: left;*/
-    	display: block;
-	margin-top: 20px;
-    	margin-left: auto;
-	margin-right: auto;
-	border-radius: 7px;
-	box-shadow: 0 2px 6px #888888;
-	padding: 12px;
-	text-align: center;
-	text-size: 12pt;
-	max-width: 350px;
-}
-
-.topBtn {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 99;
-	font-size: 18px;
-	height: 18px;
-	width: 12px;
-	border: none;
-	outline: none;
-	background-color: #cc5500;
-	color: white;
-	cursor: pointer;
-	padding: 12px;
-	border-radius: 8px;
-	transition: all .25s ease-in-out;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.topBtn:hover {
-	background-color: #555;
-}
-
-.topShow {
-	visibility: visible;
-	opacity: 1;
-}
-.topHide {
-	visibility: hidden;
-	bottom: 0px;
-	opacity: 0;
-}
-
-.arrow {
-	border: solid #f1f1f1;
-	border-width: 0 4px 4px 0;
-	display: inline-block;
-	padding: 4px;
-}
-
-.right {
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-}
-
-.up {
-	transform: rotate(-135deg);
-	-webkit-transform: rotate(-135deg);
-}
-
-
-.blankspace {
-	width: 100%;
-	height: 80px;
-	/*background-color: white;
-	border: 1px dashed lightgray*/
-}
-
-
-	
-.contact_window {
-	font-size: 14pt;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: auto;
-	text-align: left;
-	padding: 30px;
-	border: 2px solid #cc5500;
-	background-color: #f1f1f1;
-	width: 485px;
-	max-width: 840px;
-	border-radius: 20px 0 20px 0;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-	box-sizing: border-box;
-}
-
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-	background-color: #58b96b;
-	float: right;
-	font-size: 1.2em;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 6px;
-	cursor: pointer;
-	transition: box-shadow 120ms ease-in;
-	 -webkit-transition: box-shadow 120ms ease-in;
-	 -moz-transition: box-shadow 120ms ease-in;
-	 -o-transition: box-shadow 120ms ease-in;
-}
-
-input[type=submit]:hover {
-  background-color: #4bb460;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-.share_buttons {
-	height: 35px;
-}
-
-.contact_button {
-	height: 35px;
-    padding: 5px;
-    border: 0;
-    box-shadow: 1;
-    display: inline;
-	opacity: 0.2;
-    filter: none;
-     -webkit-filter: grayscale(100%); 
-     -moz-filter: grayscale(100%); 
-     -ms-filter: grayscale(100%); 
-     -o-filter: grayscale(100%);
-    cursor: pointer; 
-    transition: all 400ms ease;
-}
-
-.contact_button:hover { 
-	opacity: 1;
-    filter: none; 
-     -webkit-filter: grayscale(0%); 
-     -moz-filter: grayscale(0%); 
-     -ms-filter: grayscale(0%); 
-     -o-filter: grayscale(0%); 
-    cursor: pointer; 
-}
-
-
-.footer {
-	
-	background: #cccccc;
-	color: #808080;
-	text-align: center;
-		  /* top right bottom left */
-	padding: 20px 120px 80px 120px;
-	margin-top: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 0;
-	font-size: 10pt;
-}
-
-
-
-/* Responsive portrait for small screens */
-@media screen and (max-width: 550px) {
-  .portraitBoundary {
-	padding-left: 65px;
-	margin: -20px 20px 15px 20px;
-	z-index: 15;
-  }
-  .stickyPortrait {
-	width: 65px;
-	margin: 10px 95px 3px 400px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
-  }
-  .headerInner {
-	padding-left: 25px;
-  }
-  .content {
-    padding-left: 20px;
-	padding-right: 20px;
-  }
-  .content-NoPortrait {
-    padding: 130px 20px 230px 20px;
-  }
-  .contact_window {
-	padding: 15px;
-	border: 1px solid #cc5500;
-	width: 320px;
-  }
-}
+					<input type="submit" value="Submit Message">
+				</form>
+			</div>
+					
+				<br>
+				<br>		
+		<br><br><br><br>
+		
+		
+			
+        <!--</div>-->
+		
+		<div class="footer" id="footerID">
+			<div class="share_buttons"> 
+				<!-- LinkedIn --> 
+				<div class="contact_button">
+					<a href="https://www.linkedin.com/in/steven-small" target="_blank"> 
+					<img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" style="height:100%;"/></a>
+				</div>
+				
+				<!-- Github -->
+				<div class="contact_button">
+					<a href="https://github.com/stvnsmll" target="_blank"> 
+					<img src="media/icn/github.png" alt="GitHub" style="height:100%;"/></a>
+				</div>
+				
+				<!-- Email -->
+				<div class="contact_button">
+					<a href="mailto: jstriggswebsite@securesteve.33mail.com?subject=Website%20generated%20email&body=Cool%20website,%20Jeff!"> 
+					<img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" style="height:100%;"/></a>
+				</div>
+			</div>
+			<br>
+		&copy 2019 -
+			<script type="text/JavaScript">
+			document.write(new Date().getFullYear());
+			</script>
+		Steven Small
+		<br>
+		All Rights Reserved
+		<br><br>
+		<a href="index2.html">(multi-page version)</a>
+		</div>
+    </body>
+</html>
