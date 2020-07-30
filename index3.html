@@ -414,14 +414,12 @@
 				I'd appreciate any feedback on this website or any of the projects that I've shared.  I'm currently working 
 				full time, but would enjoy spending some of my free time supporting projects that you may have on the side.
 				<br>
-				<br>
-				<br>
 			</div>
 			
 			<div class="contact_window"><!--action="pages/contact.php" method="post" target="_blank"--> 
-				<form onsubmit="noEmailYet(); return false;"
+				<form onsubmit="noEmailYet(); return false;">
 					<label for="yname">Your name</label>
-					<input type="text" id="yname" name="sendername" placeholder="Your name..">
+					<input type="text" id="yname" name="sendername" placeholder=" first last..">
 
 					<label for="yemail">Your email</label>
 					<input type="email" id="yemail" name="senderemail" placeholder="you@something.com">
@@ -430,18 +428,14 @@
 					<textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
 
 					<label for="CV_request">For a copy of one of my CVs, please select it here:</label><br>
+					&nbsp <input type="checkbox" name="CV" value="Prog_Resume"> Programming CV<br>
 					&nbsp <input type="checkbox" name="CV" value="ME_Resume"> Mechanical Engineering CV<br>
-					&nbsp <input type="checkbox" name="CV" value="Prog_Resume"> Programming CV<br><br>
-
+					<br>
 					<input type="submit" value="Submit Message">
 				</form>
 			</div>
-					
-				<br>
-				<br>		
-		<br><br><br><br>
 		
-		
+		<div class="preFooter"></div>
 			
         <!--</div>-->
 		
@@ -450,26 +444,29 @@
 				<!-- LinkedIn --> 
 				<div class="contact_button">
 					<a href="https://www.linkedin.com/in/steven-small" target="_blank"> 
-					<img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" style="height:100%;"/></a>
+					<a><p class=footer_contact_button><i class="fa fa-linkedin-square"></i></p></a></a>
 				</div>
 				
 				<!-- Github -->
 				<div class="contact_button">
 					<a href="https://github.com/stvnsmll" target="_blank"> 
-					<img src="media/icn/github.png" alt="GitHub" style="height:100%;"/></a>
+					<a><p class=footer_contact_button><i class="fa fa-github-square"></i></p></a></a>
 				</div>
 				
 				<!-- Email -->
 				<div class="contact_button">
-					<a href="mailto: jstriggswebsite@securesteve.33mail.com?subject=Website%20generated%20email&body=Cool%20website,%20Jeff!"> 
-					<img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" style="height:100%;"/></a>
+					<a href="mailto: jstriggswebsite@securesteve.33mail.com"> 
+					<a><p class=footer_contact_button><i class="fa fa-envelope-square"></i></p></a></a>
 				</div>
 			</div>
 			<br>
+			<br>
+			
 		&copy 2019 -
 			<script type="text/JavaScript">
 			document.write(new Date().getFullYear());
 			</script>
+		<br>
 		Steven Small
 		<br>
 		All Rights Reserved
