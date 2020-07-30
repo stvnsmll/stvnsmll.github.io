@@ -107,3 +107,8 @@ $(document).click(function(event) {
         $(".drop-links").removeClass("menuShow");
     }   
 });
+
+
+function noEmailYet() {
+	alert("\nYeah, sooo... I haven't set up the email PHP script yet...\nYou're just going to have to click the email icon button for now if you want to send me an email.\n\nsry.");
+}
