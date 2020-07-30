@@ -418,8 +418,8 @@
 				<br>
 			</div>
 			
-			<div class="contact_window">
-				<form action="/action_page.php">
+			<div class="contact_window"><!--action="pages/contact.php" method="post" target="_blank"--> 
+				<form onsubmit="noEmailYet(); return false;"
 					<label for="yname">Your name</label>
 					<input type="text" id="yname" name="sendername" placeholder="Your name..">
 
