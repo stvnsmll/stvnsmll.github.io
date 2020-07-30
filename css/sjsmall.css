@@ -8,7 +8,6 @@ All Rights Reserved
 
 html {
   scroll-behavior: smooth;
-  background-color: white;
 }
 
 
@@ -28,7 +27,6 @@ body {
 	max-width: 840px;
 	z-index: 0;
 	font-size: 14pt;
-
 }
 
 /* Page content */
@@ -41,7 +39,6 @@ body {
 	max-width: 840px;
 	z-index: 0;
 	font-size: 14pt;
-	background-color: white;
 }
 
 .content-flickity {
@@ -247,7 +244,6 @@ body {
 
 	
 .contact_window {
-	background-color: white;
 	font-size: 14pt;
 	margin-left: auto;
 	margin-right: auto;
@@ -258,10 +254,9 @@ body {
 	background-color: #f1f1f1;
 	width: 485px;
 	max-width: 840px;
-	border-radius: 0 0 35px 35px;
+	border-radius: 20px 0 20px 0;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	box-sizing: border-box;
-	margin-bottom: 30px;
 }
 
 
@@ -317,19 +312,19 @@ input[type=submit]:hover {
 
 .contact_button {
 	height: 35px;
-    padding: 5px;
+	padding: 5px;
 	font-size: 2em;
-    border: 0;
-    box-shadow: 1;
-    display: inline;
+	border: 0;
+	box-shadow: 1;
+	display: inline;
 	opacity: 0.2;
-    filter: none;
-     -webkit-filter: grayscale(100%); 
-     -moz-filter: grayscale(100%); 
-     -ms-filter: grayscale(100%); 
-     -o-filter: grayscale(100%);
-    cursor: pointer; 
-    transition: all 400ms ease;
+	filter: none;
+	 -webkit-filter: grayscale(100%); 
+	 -moz-filter: grayscale(100%); 
+	 -ms-filter: grayscale(100%); 
+	 -o-filter: grayscale(100%);
+	cursor: pointer; 
+	transition: all 400ms ease;
 }
 
 .contact_button:hover { 
@@ -342,29 +337,19 @@ input[type=submit]:hover {
     cursor: pointer; 
 }
 
-.preFooter{
-	background: white;
-	height: 30px;
-	margin-bottom: 230px;
-	box-shadow: 0 8px 13px -13px rgba(0, 0, 0, 0.9);
-	
-}
 
 .footer {
-	position: fixed;
-	width: 100%;
-	bottom: 0;
-	height: 200px;
+	
 	background: #cccccc;
 	color: #808080;
 	text-align: center;
 		  /* top right bottom left */
-	padding: 20px 30px 10px 30px;
+	padding: 20px 120px 80px 120px;
 	box-shadow: inset 0 30px 60px -60px rgba(0, 0, 0, 0.9);
 	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	z-index: -1;
+	z-index: 0;
 	font-size: 10pt;
 }
 
@@ -383,6 +368,8 @@ input[type=submit]:hover {
 	color: #994000;
     cursor: pointer; 
 }
+
+
 
 
 
