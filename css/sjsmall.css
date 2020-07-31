@@ -71,7 +71,7 @@ body {
 
 .header {
 	z-index: 10;
-	width: 100%
+	width: 100%;
 }
 
 .headerInner {
@@ -90,7 +90,7 @@ body {
 
 .sticky {
 	position: fixed;
-	top: 0;
+	top: -1px;
 	min-width: 320px;
 }
 
