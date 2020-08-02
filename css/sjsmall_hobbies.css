@@ -143,6 +143,7 @@
 /* remove blur effect on smaller mobile devices*/
 @media screen and (max-width: 450px) {
   .carousel-cell {
+    opacity: 0.4;
     -webkit-filter: none;
             filter: none;
   }
