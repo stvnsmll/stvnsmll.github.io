@@ -138,3 +138,12 @@
 .flickity-prev-next-button:disabled {
   display: none;
 }
+
+
+/* remove blur effect on smaller mobile devices*/
+@media screen and (max-width: 450px) {
+  .carousel-cell {
+    -webkit-filter: none;
+            filter: none;
+  }
+}
