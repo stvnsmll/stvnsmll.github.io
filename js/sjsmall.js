@@ -112,3 +112,7 @@ $(document).click(function(event) {
 function noEmailYet() {
 	alert("\nYeah, sooo... I haven't set up the email PHP script yet...\nYou're just going to have to click the email icon button for now if you want to send me an email.\n\nsry.");
 }
+
+function showCMIpwd() {
+	alert("\nIMPORTANT!!\n\nThe password to view the engineering efficiency tools is:   worksamples\n\nAfter the password entry, click 'Open in ONLYOFFICE'\n");
+}
