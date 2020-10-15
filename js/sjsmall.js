@@ -114,7 +114,7 @@ function noEmailYet() {
 }
 
 function showCMIpwd() {
-	alert("\nIMPORTANT!!\n\nThe password to view the engineering efficiency tools is:   worksamples\n\nAfter the password entry, click 'Open in ONLYOFFICE'\n");
+	alert("\nIMPORTANT!!\n\nThe password to view the engineering efficiency tools is:   worksamples\n\n");
 	var win = window.open("https://nextcloud.kleinefamilie.tk/s/N9cs6iNaxDWecbQ", '_blank');
 	win.focus();
 }
