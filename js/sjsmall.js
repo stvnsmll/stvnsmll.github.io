@@ -115,6 +115,6 @@ function noEmailYet() {
 
 function showCMIpwd() {
 	alert("\nIMPORTANT!!\n\nThe password to view the engineering efficiency tools is:   worksamples\n\n");
-	var win = window.open("https://nextcloud.kleinefamilie.tk/s/N9cs6iNaxDWecbQ", '_blank');
+	var win = window.open("https://nextcloud.kleinefamilie.tk/s/k3LfAsj6SrNXjoM", '_blank');
 	win.focus();
 }
